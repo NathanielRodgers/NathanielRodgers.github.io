@@ -54,15 +54,6 @@
         The spectrograph materials (along with a bunch else, plus some extremely generous guidance) were given
         to us by Prof. Schiminovich, which we assembled and calibrated in his lab. We tested our fibers out,
         took some pictures for analysis (see paper for both), and, satistfied, took it up to the dome for testing!
-        <br><br>
-        Our results were.. mixed. Our system was able to observe point sources like Arcturus, but our target star field
-        was eluding us. I assume design factors were at play here, most prominantly a misalignment of ferrule/fiber
-        positioning at the focal plane. Previous testing had hinted at this, and our best estimates is a focal plane 
-        misalignment of 3-5mm.
-        <br><br>
-        However, not all was lost, and we still obtained some interesting calibration measurements using white light and 
-        a neon lamp. You can check out the specifics in the paper, but essentially we isolated bands of spectra and calculated
-        the dispersion relations, finding the wavelength centers and reciprocal linear dispersions.
       </p>
 
     <div class="photo-row">
@@ -76,17 +67,32 @@
       </figure>
     </div>
       <p>
-        <strong>Technical details:</strong> Describe the tools, methods, materials,
-        or design choices involved.
+        <strong>Technical details:</strong> The plug plate was creating using a gnomonic projection to determine where
+        to drill, with added corrections because of mirror distortion (to the first order). These were done using a 
+        python script. Initial fabrication attempts were done using a water jet, but that proved insufficiently accurate. 
+        We transitioned to a drill press for our 1.25mm punches. Further work should consider a precision CNC.
+        <br><br>
+        Our fiber design consisted of 10 spectra fibers and one larger imaging fiber, used for tracking and telescope
+        corrections. We cut, insulated, ferruled, and polished the fibers, ensuring focal alignment. 
+        <br><br>
+        Our calibration measurements from white light and a neon lamp were done in a python script. Individual bands of
+        emission spectra were selected by isolating specific pixel ranges, after which we performed a best fit to find the most 
+        illuminated lines. We followed with dispersion relation calculations outlined in the paper.
       </p>
 
       <p>
-        <strong>Results:</strong> Describe the outcome — what worked, what you
-        measured, or what you learned.
+        <strong>Results:</strong> Our results were.. mixed. Our system was able to observe point sources like Arcturus, but our target star field
+        was eluding us. I assume design factors were at play here, most prominantly a misalignment of ferrule/fiber
+        positioning at the focal plane. Previous testing had hinted at this, and our best estimates is a focal plane 
+        misalignment of 3-5mm.
+        <br><br>
+        However, not all was lost, and we still obtained some interesting calibration measurements using white light and 
+        a neon lamp. You can check out the specifics in the paper, but essentially we isolated bands of spectra and calculated
+        the dispersion relations, finding the wavelength centers and reciprocal linear dispersions.
       </p>
 
       <p><strong>Full writeup:</strong></p>
-      <embed src="pdfs/eng-project-one.pdf" type="application/pdf" class="pdf-embed">
+      <embed src="Designing and Installing a Fiber-fed Spectrograph for Multi-Object Spectroscopy/Write-up.pdf" type="application/pdf" class="pdf-embed">
     </section>
 
     <hr>
