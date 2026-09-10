@@ -1,0 +1,297 @@
+/* ---------------------------------------------------
+   Basic page setup
+--------------------------------------------------- */
+body {
+  margin: 0;
+  background: #fdfcf6;
+  color: #222222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #23395d;
+}
+
+h1 {
+  font-size: 26px;
+  border-bottom: 2px solid #999999;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+a {
+  color: #1a4fa0;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #a03d1a;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #bbbbbb;
+  margin: 30px 0;
+}
+
+/* ---------------------------------------------------
+   Page layout: sidebar + content
+--------------------------------------------------- */
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 170px;
+  flex-shrink: 0;
+  background: #dce6f0;
+  border-right: 2px solid #999999;
+  padding: 20px 0;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 10px 16px;
+  border-bottom: 1px solid #aaaaaa;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #c7d3de;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #1a3a63;
+}
+
+.sidebar a:hover {
+  color: #a03d1a;
+  background: #cddcea;
+}
+
+.sidebar a.current {
+  font-weight: bold;
+  background: #c1d3e5;
+  border-left: 4px solid #23395d;
+  padding-left: 12px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 30px 40px 50px;
+  max-width: 800px;
+}
+
+/* ---------------------------------------------------
+   Photos
+--------------------------------------------------- */
+.photo {
+  border: 1px solid #999999;
+  background: #ffffff;
+  padding: 4px;
+  display: inline-block;
+}
+
+.photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 12px;
+  font-style: italic;
+  color: #555555;
+  margin: 4px 0 0;
+}
+
+.photo-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.photo-row figure {
+  margin: 0;
+}
+
+/* floated photos for the balloons page, text wraps around */
+figure.float-left {
+  float: left;
+  margin: 4px 18px 12px 0;
+}
+
+figure.float-right {
+  float: right;
+  margin: 4px 0 12px 18px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ---------------------------------------------------
+   Home page
+--------------------------------------------------- */
+.big-name {
+  font-size: 44px;
+  margin: 10px 0 4px;
+  border-bottom: none;
+  color: #23395d;
+}
+
+.titles {
+  font-size: 15px;
+  color: #444444;
+  margin: 0 0 24px;
+}
+
+.home-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.home-links {
+  padding-left: 20px;
+}
+
+.home-links li {
+  margin-bottom: 6px;
+}
+
+/* ---------------------------------------------------
+   Contact bar (home + about page footer)
+--------------------------------------------------- */
+.contact-bar {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 2px solid #999999;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.contact-bar a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #1a4fa0;
+}
+
+.contact-bar a:hover {
+  color: #a03d1a;
+}
+
+.contact-bar svg {
+  width: 18px;
+  height: 18px;
+  fill: #1a4fa0;
+}
+
+.contact-bar a:hover svg {
+  fill: #a03d1a;
+}
+
+/* ---------------------------------------------------
+   Buttons (resume download, etc.)
+--------------------------------------------------- */
+.button {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background: #e6e6d8;
+  border: 1px solid #999999;
+  color: #1a3a63;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.button:hover {
+  color: #a03d1a;
+  border-color: #a03d1a;
+}
+
+/* ---------------------------------------------------
+   Project / research sections
+--------------------------------------------------- */
+.project {
+  margin-bottom: 10px;
+}
+
+.skills {
+  font-style: italic;
+  color: #555555;
+  margin-top: -4px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #999999;
+  margin-top: 8px;
+}
+
+/* ---------------------------------------------------
+   Balloons page term sections
+--------------------------------------------------- */
+.term-section {
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------
+   Small screens
+--------------------------------------------------- */
+@media (max-width: 640px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: auto;
+    border-right: none;
+    border-bottom: 2px solid #999999;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  figure.float-left,
+  figure.float-right {
+    float: none;
+    margin: 0 0 12px;
+  }
+}
