@@ -25,7 +25,7 @@
     <h1>High Altitude Balloons</h1>
 
     <p>
-      I'm in my second year as the co-Mission Lead for the <a href="https://columbiaspace.org/">Columbia Space Initiative's</a>
+      I'm in my second year as the co-Mission Lead for the <a href="https://columbiaspace.org/" target="_blank" rel="noopener">Columbia Space Initiative's</a>
       high-altitude balloons team. We design and launch high-altitude research devices. I joined the team my freshman year,
       and its been an incredible experience where I've learned a lot technically, as well as how to be a leader. We're currently
       developing our most ambitious project yet, a ballast system, to control the balloon's altitude in flight both autonomously
@@ -33,14 +33,14 @@
       <br><br>
       I'm extremely passionate about this project and want to show you our work and progress.
       <br><br>
-      Also, checkout this <a href="https://www.youtube.com/watch?v=HKMDcCpAlpo">video</a> of one of our launches produced by
-      one of our very talented team members, <a href="https://www.claudioianphoto.in/">Claudio</a>
+      Also, checkout this <a href="https://www.youtube.com/watch?v=HKMDcCpAlpo" target="_blank" rel="noopener">video</a> of one of our launches produced by
+      one of our very talented team members, <a href="https://www.claudioianphoto.in/" target="_blank" rel="noopener">Claudio</a>
     </p>
 
       <p class="photo">
-        <img src="photos/balloons/PCB_final.jpg" alt="PCB" width="300">
+        <img src="photos/balloons/balloons_claudio_1.jpg" alt="PCB" width="400">
       </p>
-      <p class="caption">Our PCB! (version 1)</p>
+      <p class="caption">Meet the team!</p>
 
     <hr>
   
@@ -59,12 +59,19 @@
       </figure>
 
       <p>
-        Pico Balloons are so light-weight all you can really afford weight wise is your circuit board, solar cells, and
+        Pico Balloons are so light-weight all you can really afford is your circuit board, solar cells, and
         antenna. Our boards use the RP2040 microcontroller and an Si5351A clock generator
         with a TCXO crystal oscillator to transmit WSPR on the 17-meter band (~18 MHz). WSPR is a barebones digital protocol
         we used to send our location and altitude, encoding our altitude as the power of our transmission.
         For transmission, we used a 25.9 foot half-wave dipole antenna.
-        <br> <br>
+        
+      </p>
+      <figure class="photo float-right">
+        <img src="photos/balloons/PCB_final.jpg" alt="Our PCB" width="260">
+        <figcaption class="caption">Version 1</figcaption>
+      </figure>
+
+      <p>
         My primary focus was on the RF transmission. WSPR operates on a select few frequencies, one of those being the 
         17-meter band we chose. To transmit on these frequencies I chose the standard Si5351A clock generator. However,
         Si5351 has too much jitter for me to comfortable let it transmit on the narrow band we are looking for (and it
