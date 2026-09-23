@@ -49,6 +49,7 @@
       <h2>Fall 2025</h2>
 
       <p>
+        <br>
         My first semester leading the team, and the third year of the balloons mission. We were continuing development
         from the previous semester on Pico Balloons, ultra-light boards that get launched on non-expanding mylar balloons, 
         rise to around 40,000 feet and then (ideally) circumnavigate the globe.
@@ -72,9 +73,10 @@
       </figure>
 
       <p style="clear: left;">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
         My primary focus was on the RF transmission. WSPR operates on a select few frequencies, one of those being the 
         17-meter band we chose. To transmit on these frequencies I chose the standard Si5351A clock generator. However,
-        Si5351 has too much jitter for me to comfortable let it transmit on the narrow band we are looking for (and it
+        Si5351 has too much jitter for me to comfortably let it transmit on the narrow band we are looking for (and it
         has temperature problems), so I added a TCXO crystal oscillator to provide a master reference. This outputs a 
         square wave, so I designed a low-pass filter for frequencies above ~21Mhz in order to block out the
         higher frequency harmonics.
