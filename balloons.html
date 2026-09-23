@@ -30,15 +30,20 @@
       and its been an incredible experience where I've learned a lot technically, as well as how to be a leader. We're currently
       developing our most ambitious project yet, a ballast system, to control the balloon's altitude in flight both autonomously
       and manually.
-
+      <br><br>
       I'm extremely passionate about this project and want to show you our work and progress.
-
+      <br><br>
       Also, checkout this <a href="https://www.youtube.com/watch?v=HKMDcCpAlpo">video</a> of one of our launches produced by
       one of our very talented team members, <a href="https://www.claudioianphoto.in/">Claudio</a>
     </p>
 
-    <hr>
+      <p class="photo">
+        <img src="photos/balloons/PCB_final.jpg" alt="PCB" width="300">
+      </p>
+      <p class="caption">Our PCB! (version 1)</p>
 
+    <hr>
+  
     <!--  Fall 2025  -->
     <section class="term-section">
       <h2>Fall 2025</h2>
@@ -59,7 +64,7 @@
         with a TCXO crystal oscillator to transmit WSPR on the 17-meter band (~18 MHz). WSPR is a barebones digital protocol
         we used to send our location and altitude, encoding our altitude as the power of our transmission.
         For transmission, we used a 25.9 foot half-wave dipole antenna.
-        <br>
+        <br> <br>
         My primary focus was on the RF transmission. WSPR operates on a select few frequencies, one of those being the 
         17-meter band we chose. To transmit on these frequencies I chose the standard Si5351A clock generator. However,
         Si5351 has too much jitter for me to comfortable let it transmit on the narrow band we are looking for (and it
