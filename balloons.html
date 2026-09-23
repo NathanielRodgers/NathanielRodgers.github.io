@@ -43,20 +43,29 @@
     <section class="term-section">
       <h2>Fall 2025</h2>
 
+      <p>
+        My first semester leading the team, and the third year of the balloons mission. We were continuing development
+        from the previous semester on Pico Balloons, ultra-light boards that get launched on non-expanding mylar balloons, 
+        rise to around 40,000 feet and then (ideally) circumnavigate the globe.
+      </p>
       <figure class="photo float-left">
-        <img src="images/balloon_fall2025.png" alt="Fall 2025 photo" width="260">
-        <figcaption class="caption">Caption for this photo</figcaption>
+        <img src="photos/balloons/PCB_screenie.png" alt="Our PCB" width="260">
+        <figcaption class="caption">Our PCB!</figcaption>
       </figure>
 
       <p>
-        Write about what happened this term — what mission you worked on, what
-        your role was, and any highlights or challenges. This paragraph can run
-        a few lines so the text wraps naturally around the photo to the left.
-      </p>
-      <p>
-        Keep going here with a second paragraph if you'd like — launch details,
-        what you learned, or what the payload carried. Add as much or as little
-        as you want; the layout will adjust.
+        Pico Balloons are so light-weight all you can really afford weight wise is your circuit board, solar cells, and
+        antenna. Our boards use the RP2040 microcontroller and an Si5351A clock generator
+        with a TCXO crystal oscillator to transmit WSPR on the 17-meter band (~18 MHz). WSPR is a barebones digital protocol
+        we used to send our location and altitude, encoding our altitude as the power of our transmission.
+        For transmission, we used a 25.9 foot half-wave dipole antenna.
+        <br>
+        My primary focus was on the RF transmission. WSPR operates on a select few frequencies, one of those being the 
+        17-meter band we chose. To transmit on these frequencies I chose the standard Si5351A clock generator. However,
+        Si5351 has too much jitter for me to comfortable let it transmit on the narrow band we are looking for (and it
+        has temperature problems), so I added a TCXO crystal oscillator to provide a master reference. This outputs a 
+        square wave, so I designed a low-pass filter for frequencies above ~21Mhz in order to block out the
+        higher frequency harmonics.
       </p>
 
       <div class="clear"></div>
