@@ -30,7 +30,7 @@
       <p class="skills"><em>Skills: Fiber Optics, Spectra Data Analysis, CAD</em></p>
 
       <p>
-        <strong>Short description:</strong> Some friends and I tried our hands at upgrading
+        Some friends and I tried our hands at upgrading
         the Pupin Rutherford Dome Telescope through multi-object spectroscopy. We had just
         installed a field-derotator on the telescope, and we thought this would be a pretty 
         cool use of it!
@@ -62,7 +62,7 @@
         <figcaption class="caption">Testing Our Fibers on the Optic Table <br> Neon lamp seen in background</figcaption>
       </figure>
       <figure class="photo">
-        <img src="photos/engineering/white_light_calibration.jpg" alt="White Light Calibration" width="240">
+        <img src="photos/engineering/white_light_calibration.jpg" alt="White Light Calibration" width="360">
         <figcaption class="caption">Calibrating with White Light</figcaption>
       </figure>
     </div>
@@ -99,36 +99,54 @@
 
     <!-- Project Two -->
     <section class="project">
-      <h2>Project Two Name</h2>
-      <p class="skills"><em>Skills: CAD, Manufacturing, Materials Testing</em></p>
+      <h2>Quantum State Tomography & Testing Bell's Inequality</h2>
+      <p class="skills"><em>Skills: Quantum Optics, Hardware Control</em></p>
 
       <p>
-        <strong>Short description:</strong> One or two sentences describing what
-        this project is and why you built it.
+        This was a final project for a quantum computing class I took,
+        done with a friend in the class. Utilizing a photon entanglement
+        setup on an optic table, we did some cool experiments.
       </p>
 
       <p class="photo">
-        <img src="images/eng2.png" alt="Photo of Project Two" width="400">
+        <img src="photos/engineering/quantum_optic_table.jpg" alt="Photo of optic table and experiment setup" width="400">
       </p>
-      <p class="caption">Caption for this photo</p>
+      <p class="caption">The Experiment! (White box holds laser, wave plates, and BBO crystal)</p>
 
       <p>
-        <strong>What I did:</strong> Describe your specific role and contributions
-        to the project.
+        <strong>What I did:</strong> The little white box in the picture above conveniently generates a pair of 
+        |HH>+|VV> entangled photons, which allows us to do all sorts of experiments. We decided to test if we could 
+        violate Bell's inequality, which we did by measuring correlations (# of incident entangled photons on our detectors)
+        and running some calculations in python. We were then curious about the polarization state of the system, and its
+        coherence, so we performed single photon tomography as a way to test the effectiveness of the laser/BBO setup. We
+        managed to reconstruct the density matrix of the individual photons, and compared these maximally mixed states with
+        the state from a pure, non-entangled beam.
       </p>
 
       <p>
-        <strong>Technical details:</strong> Describe the tools, methods, materials,
-        or design choices involved.
+        <strong>Technical details:</strong> The source is a pair of polarization-entangled photon pairs
+        pumped by a continuous wave laser at 405nm, entangled via spontaneous parametric down-conversion 
+        through a pair of BBO crystals (entanglement generated through their high nonlinearity). This comes
+        with a whole optic assembly of half-wave plates and compensation crystals to produce a maximally 
+        entangled state at a single group-velocity. This source is fiber coupled to measure correlations
+        at high fidelity, with linear polarizers placed just before the detectors for analysis.
+        
+        The experiments themselves involved tinkering with the various mirrors and polarizers on the table,
+        ensuring high correlations (walking the mirrors) and testing different angles of polarization to collect
+        data. The measurements we needed to take, and why, are derived in the paper below.
       </p>
 
       <p>
-        <strong>Results:</strong> Describe the outcome — what worked, what you
-        measured, or what you learned.
+        <strong>Results:</strong> We proved quantum mechanics! We achieved an S value of 2.297, which, according to Bell's
+        inequality (or CHSH inequality), means the predictions of quantum mechanics are correct, and local realism isn't!
+        Einstein would be real spooked. Our tomography showed non-definite single photon polarization (from comparison
+        between pure and mixed density matrixes), indirectly showing the non-locality we proved before. A full rundown of
+        all this is in the paper below, check it out! It's pretty cool.
+
       </p>
 
       <p><strong>Full writeup:</strong></p>
-      <embed src="pdfs/eng-project-two.pdf" type="application/pdf" class="pdf-embed">
+      <embed src="Experimentally Testing Bell’s Inequality and Single Photon Tomography/Write-up.pdf" type="application/pdf" class="pdf-embed">
     </section>
 
     <hr>
