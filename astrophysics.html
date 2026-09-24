@@ -31,7 +31,7 @@
 
 
 
-    <!-- ================= Research One ================= -->
+    <!--  Research One  -->
     <section class="project">
       <h2><a href="https://github.com/NathanielRodgers/Pulsar_Ellipticity_Inference" target="_blank" rel="noopener">Hierarchical Bayesian Analysis of Pulsar Ellipticity Hyperparameters</a></h2>
       <p class="skills"><em>Relevant Topics: Hierarchical Bayesian Inference, Gravitational Waves, Data Analysis, Pulsars</em></p>
@@ -47,7 +47,10 @@
         to emit these continuous waves is little deformations on their surfaces, creating a quadrupole (or higher multipoles)
         that would emit a gravitational wave. These deformations are called ellipticities, and are exactly what I was looking for.
       </p>
-
+      <figure class="photo">
+        <img src="photos/astro_research/gaussian.png" alt="gaussian posterior" width="560">
+        <figcaption class="caption">Hyperparameter Posterior Distribituion for Gaussian Population Model</figcaption>
+      </figure>
       <p>
         <strong>Day to day:</strong> Much of the time was spent exploring hierarchical modeling and making sure I understood
         exactly what was going on behind the hood, from the basics of bayesian statistics to numpyro sampling. There was an 
@@ -61,16 +64,13 @@
         classes from NumPyro.distributions. Check out my github.
       </p>
 
-      <div class="photo-row">
-        <figure class="photo">
-          <img src="photos/astro_research/PPDs.png" alt="PPDs" width="360">
-          <figcaption class="caption">Posterior Probability Distributions for Hyperparameters <br>by Distribution</figcaption>
-        </figure>
-        <figure class="photo">
-          <img src="photos/astro_research/gaussian.png" alt="gaussian posterior" width="360">
-          <figcaption class="caption">Hyperparameter Posterior Distribituion for <br>Gaussian Population Model</figcaption>
-        </figure>
-      </div>
+
+      <figure class="photo">
+        <img src="photos/astro_research/PPDs.png" alt="PPDs" width="500">
+        <figcaption class="caption">Posterior Probability Distributions for Hyperparameters <br>by Distribution</figcaption>
+      </figure>
+
+
 
       <p>
         <strong>Code:</strong>
@@ -80,34 +80,50 @@
 
     <hr>
 
-    <!-- ================= Research Two ================= -->
+    <!--  Research Two  -->
     <section class="project">
-      <h2>Research Project Two Name</h2>
-      <p class="skills"><em>Skills: MATLAB, Signal Processing, Statistics</em></p>
+      <h2>Systematic 1-D Stellar Evolution & Merger Grids</h2>
+      <p class="skills"><em>Relevant Topics: Stellar Simulation, Data Processing, Shell, MESA</em></p>
 
       <p>
-        <strong>What the project was:</strong> Describe the research question,
-        the project's goal, and any lab or advisor it was done with.
+        <strong>What the project was:</strong> Joining Dr. Athira Menon's stellar mergers group, this was
+        my first real exposure to astrophysics research and proper simulation. I built and ran systematic 
+        1-D stellar evolution grids in MESA, testing how mergers contribute to the blue supergiant (BSG) family.
+        Essentially, BSGs are luminous, massive stars that play an incredibly important role in galactic
+        chemical enrichment. At the same time, their origins are mysterious. 70% of these stars are observed
+        to be single (not in orbit with another star) and they populate a region of the Hertzsprung-Russel (HR)
+        diagram that is notoriously empty (the HR gap). This is primarily a problem because classical single-star 
+        evolutionary models can only reproduce the cooler members of BSGs, meaning there is something vital missing
+        in our understanding of stellar evolution (mergers!).
       </p>
 
       <p>
-        <strong>My role:</strong> Describe what specifically you worked on within
-        the project.
+        <strong>Day to day:</strong> I spent the majority of my time building stellar grids to test potential
+        merger contributions to the HR gap. By varying various parameters (metallicity, internal mixing procedures,
+        convective overshoots, rotational mixing, semiconvection, accretion rates, binary mass ratios) I captured
+        environments from all across the galaxy, and across various possibilities of unconstrained parameters. By
+        creating Kippenhahn diagrams and HR-diagram tracks and comparing across literature I, along with the rest
+        of the team, assessed the inner-workings of the physics of merger-born stars.
+        
       </p>
 
       <p>
-        <strong>Technical details:</strong> Describe the methods, datasets, models,
-        or instruments involved.
+        <strong>The findings!:</strong> Only merger remnants naturally populate the hot region in the Hertzsprung gap
+        (>10,000 K)! This occurs between the turn-off of the main sequence and the single-star blue loops. Because
+        merger born stars have larger envelopes due to Roche lobe mass transfer, they sustain a longer lived core helium
+        burning phase. With no dependence on metallicity and being insensitive to mixing, this is a very convincing argument
+        for stellar mergers being a common evolutionary pathway. 
+
       </p>
 
       <div class="photo-row">
         <figure class="photo">
-          <img src="images/astro2a.png" alt="Research Project Two Photo A" width="360">
-          <figcaption class="caption">Caption for photo A</figcaption>
+          <img src="photos/astro_research/JERRY.png" alt="FILLED HR diagram" width="360">
+          <figcaption class="caption">The Hertzsprung gap populated! <br> Credit: Athira Menon & <u>Jerry Wang</u></figcaption>
         </figure>
         <figure class="photo">
-          <img src="images/astro2b.png" alt="Research Project Two Photo B" width="360">
-          <figcaption class="caption">Caption for photo B</figcaption>
+          <img src="photos/astro_research/escape_room.PNG" alt="we escaped!" width="380">
+          <figcaption class="caption">The team beat an escape room!<br>Feat: Me, Jerry, Dr. Menon</figcaption>
         </figure>
       </div>
     </section>
