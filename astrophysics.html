@@ -24,40 +24,57 @@
 
     <h1>Astrophysics &amp; Research</h1>
 
+    <p> 
+      Here are some research projects I've done! These were incredibly interesting endeavors, and I'm very grateful for 
+      these experiences and the professors that helped me along the way.
+    </p>
+
+
+
     <!-- ================= Research One ================= -->
     <section class="project">
-      <h2>Research Project One Name</h2>
-      <p class="skills"><em>Skills: Python, Data Analysis, Astropy</em></p>
+      <h2>Hierarchical Bayesian Analysis of Pulsar Ellipticity Hyperparameters</h2>
+      <p class="skills"><em>Relevant Topics: Hierarchical Bayesian Inference, Gravitational Waves, Data Analysis, Pulsars</em></p>
 
       <p>
-        <strong>What the project was:</strong> Describe the research question,
-        the project's goal, and any lab or advisor it was done with.
+        <strong>What the project was:</strong> For the summer of '26 I wanted to learn more about data analysis, and was 
+        especially interested in its applications in astrophysics. So, after speaking with Professor Max Isi, he offered
+        to show me the ropes of hierarchical Bayesian inference in the context of constraining pulsar ellipticities, with 
+        the end goal of running these models on the newest batches of processed LIGO data. For context, general relativity
+        predicts that pulsars, like merging black holes, emit gravitational waves. The difference, however, is that pulsars
+        "release" these waves continuously. Unlike inspiraling black holes, which emit intense transient waves, these pulsars
+        emit quiet continuous gravitational waves, order of magnitude quieter than the merger counterpart. What enables pulsars
+        to emit these continuous waves is little deformations on their surfaces, creating a quadrupole (or higher multipoles)
+        that would emit a gravitational wave. These deformations are called ellipticities, and are exactly what I was looking for.
       </p>
 
       <p>
-        <strong>My role:</strong> Describe what specifically you worked on within
-        the project.
+        <strong>Day to day:</strong> Much of the time was spent exploring hierarchical modeling and making sure I understood
+        exactly what was going on behind the hood, from the basics of bayesian statistics to numpyro sampling. There was an 
+        especially big focus on the creation of hierarchical models themselves, and the statistical theory behind it. Parameter
+        marginalization is such an interesting and incredibly powerful tool, its kind of crazy. 
       </p>
 
       <p>
-        <strong>Technical details:</strong> Describe the methods, datasets, models,
-        or instruments involved.
+        <strong>The nitty gritty:</strong> Data was taken from the ATNF Pulsar Catalogue, LIGO S6, and proprietary posterier
+        samples from LIGO O4. Data analysis was done in python using NumPyro and JAX, specifically NumPyro NUTS and various
+        classes from NumPyro.distributions. Check out my github.
       </p>
 
       <div class="photo-row">
         <figure class="photo">
-          <img src="images/astro1a.png" alt="Research Project One Photo A" width="360">
-          <figcaption class="caption">Caption for photo A</figcaption>
+          <img src="photos/astro_research/PPDs.png" alt="PPDs" width="360">
+          <figcaption class="caption">Posterior Probability Distributions for Hyperparameters by Distribution</figcaption>
         </figure>
         <figure class="photo">
-          <img src="images/astro1b.png" alt="Research Project One Photo B" width="360">
-          <figcaption class="caption">Caption for photo B</figcaption>
+          <img src="photos/astro_research/gaussian.png" alt="gaussian posterior" width="360">
+          <figcaption class="caption">Hyperparameter Posterior Distribituion for Gaussian Population Model</figcaption>
         </figure>
       </div>
 
       <p>
         <strong>Code:</strong>
-        <a href="https://github.com/yourusername/research-one" target="_blank" rel="noopener">View on GitHub</a>
+        <a href="https://github.com/NathanielRodgers/Pulsar_Ellipticity_Inference" target="_blank" rel="noopener">View on GitHub!</a>
       </p>
     </section>
 
